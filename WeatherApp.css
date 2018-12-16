@@ -1,0 +1,117 @@
+body{
+    color: #d84200;
+}
+
+h1{
+    font-weight: 500;
+    font-family: "MotokikiFont","Nunito Sans","Avenir Next","Arial",sans-serif;
+    margin-top: 30px;
+    margin-left: 70px;
+    
+}
+
+.primary-Button {
+    font-family: "MotokikiFont","Nunito Sans","Avenir Next","Arial",sans-serif;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-image: -webkit-linear-gradient(180deg,#d84200,#e70);
+    background-image: linear-gradient(270deg,#d84200,#e70);
+    box-shadow: 0 10px 20px -10px rgba(0,0,0,.2);
+    transition: box-shadow .4s ease-in-out;
+    color: #fff;
+    font-weight: 400;
+    border: 0;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+
+    
+}
+
+.primary-Button:hover {
+    box-shadow: 4px 4px 50px -10px;
+    font-weight: bold;
+  }
+
+  .container{
+      position: relative;
+  }
+
+.tyre{
+    margin-left: 250px;
+    margin-top: 10px;
+    width: 30%;
+}
+
+.cityTextBox{
+    position: absolute;
+    bottom: 280px;
+    left: 450px;
+}
+
+.innerCityTextBox{
+    background-color: #fdd501;
+    border-radius: 4px;
+    border: solid 2px;
+    padding: 10px;
+}
+
+.tyreTracks{
+    transform: rotate(5deg);
+    position: absolute;
+    left: 1000px;
+    bottom: -255px;
+    z-index: -10;
+}
+
+footer{
+    text-align: center;
+    padding: 23px;
+}
+
+.black{
+    color: black;
+    font-size: 20px;
+}
+
+.app{
+    font-size: 20px;
+}
+
+.contact{
+    margin-bottom: 130px;
+}
+
+.diamond{
+    position: absolute;
+    bottom: 80px;
+    z-index: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: #5fa90e;
+    left: 700px;
+    border: none;
+    box-shadow: 4px 4px 50px -10px rgba(0,0,0,.4);
+    cursor: pointer;
+}
+
+.diamond:hover{
+    box-shadow: 4px 4px 50px -10px
+}
+
+.weather{
+    position: absolute;
+    bottom: 220px;
+    left: 900px;
+    color: #5fa90e;
+}
+
+.city{
+    text-transform: uppercase;
+    font-weight: bold;
+    bottom: 350px;
+    left: 900px;
+}

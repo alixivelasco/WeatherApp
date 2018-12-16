@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<title>Weather App</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="WeatherApp.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div >
+  <div class="w3-bar w3-padding w3-card">
+  <span class="black" >Weather</span><span class="app">App</span>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <button class="primary-Button"  onclick="getWind()">Wind</button>
+      <button class="primary-Button" onclick="getCoord()">Co-ordinates</button>
+    </div>
+  </div>
+</div>
+ </div>
+  
+ <h1>Please enter your city below for the current weather</h1>
+
+<div class="container">
+ <div>
+<img class="tyre" src="http://pngimg.com/uploads/tire/tire_PNG50.png" alt="Tyre image">
+ </div>
+
+<div class="cityTextBox">
+    <input id="cityInput"class="innerCityTextBox" type="text" placeholder="LONDON">
+</div>
+
+<div>
+<button class="diamond" type="submit" onclick="getWeather()">Submit</button>
+</div>
+<p class="weather city" id="city"></p>
+  <p class="weather" id="weather"></p>
+    <p class="weather" id="wind"></p>
+    <p class="weather" id="coord"></p>
+ <div>
+<img class="tyreTracks" scroll="no" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Skidmarks.svg/768px-Skidmarks.svg.png" alt="Tyre tracks">
+ </div>
+</div>
+
+  <!-- Contact Section -->
+  <div class="contact" >
+   
+    </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-light-grey">
+  <p>Powered by <a href="https://www.motokiki.com/" title="www.motokiki.com" target="_blank" class="w3-hover-text-green">Motokiki</a></p>
+</footer>
+
+<script src="WeatherApp.js">
+
+
+// function getWeather(){
+//   function append(parent, el) {
+//     return parent.appendChild(el);
+//   }
+//   function remove(parent, el) {
+//     return parent.removeChild(el);
+//   }
+//   const ul = document.getElementById('weather');
+//       while (ul.firstChild) {
+//         ul.removeChild(ul.firstChild);
+//     }
+//   var city = document.getElementById("cityInput").value;
+//   document.getElementById("city").innerHTML = city;
+
+  
+//   fetch("http://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric&APPID=9b7cdda100b385f32905ded030287258")
+//   .then((resp) => resp.json())
+//   .then(function(data) {
+//     let weather = data.main;
+//     console.log(data);
+//      Object.keys(weather).forEach(function(key) {
+//     let li = document.createElement('li'),
+//           span = document.createElement('span');
+//       span.innerHTML = "The" + " " + key + " is: " + weather[key];
+//       append(li, span);
+//       append(ul, li);
+//     });
+// })
+// .catch(function() {
+//       document.getElementById("weather").innerHTML = "Please enter a valid city to retrieve the weather";
+//   });  
+// }
+
+// function getWind(){
+//   function append(parent, el) {
+//     return parent.appendChild(el);
+//   }
+//   function remove(parent, el) {
+//     return parent.removeChild(el);
+//   }
+//   const ul = document.getElementById('weather');
+//       while (ul.firstChild) {
+//         ul.removeChild(ul.firstChild);
+//     }
+//   var city = document.getElementById("cityInput").value;
+//   document.getElementById("city").innerHTML = city;
+//   fetch("http://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric&APPID=9b7cdda100b385f32905ded030287258")
+//   .then((resp) => resp.json())
+//   .then(function(data) {
+//     let weather = data.wind;
+//      Object.keys(weather).forEach(function(key) {
+//     let li = document.createElement('li'),
+//           span = document.createElement('span');
+//       span.innerHTML = "The" + " " + "wind" + " " + key + " is: " + weather[key];
+//       append(li, span);
+//       append(ul, li);
+//     });
+// })
+// .catch(function() {
+//       document.getElementById("weather").innerHTML = "Please enter a valid city to retrieve the weather";
+//   });  
+// }
+
+// function getCoord(){
+//   function append(parent, el) {
+//     return parent.appendChild(el);
+//   }
+//   function remove(parent, el) {
+//     return parent.removeChild(el);
+//   }
+//   const ul = document.getElementById('weather');
+//       while (ul.firstChild) {
+//         ul.removeChild(ul.firstChild);
+//     }
+//   var city = document.getElementById("cityInput").value;
+//   document.getElementById("city").innerHTML = city;
+
+//   fetch("http://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric&APPID=9b7cdda100b385f32905ded030287258")
+//   .then((resp) => resp.json())
+//   .then(function(data) {
+//     let weather = data.coord;
+//      Object.keys(weather).forEach(function(key) {
+//     let li = document.createElement('li'),
+//           span = document.createElement('span');
+//       span.innerHTML = "The" + " " + key + " is: " + weather[key];
+//       append(li, span);
+//       append(ul, li);
+//     });
+// })
+// .catch(function() {
+//       document.getElementById("weather").innerHTML = "Please enter a valid city to retrieve the weather";
+//   });  
+// }
+
+</script>
+</body>
+</html>
